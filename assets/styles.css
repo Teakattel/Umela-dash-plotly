@@ -1,0 +1,225 @@
+/* =========================================
+   Global
+   ========================================= */
+
+body {
+    margin: 0;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+
+/* =========================================
+   Navbar
+   ========================================= */
+
+.app-navbar {
+    min-height: 72px;
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #1e3a8a
+    ) !important;
+
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.15);
+}
+
+.app-navbar-brand {
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.app-navbar-subtitle {
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   Landing page
+   ========================================= */
+
+.landing-page {
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(14, 165, 233, 0.10),
+            transparent 30%
+        ),
+        #f4f7fb;
+}
+
+
+/* =========================================
+   Main card
+   ========================================= */
+
+.landing-card {
+    border: none !important;
+    border-radius: 24px !important;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.10),
+        0 4px 12px rgba(15, 23, 42, 0.05);
+
+    overflow: hidden;
+}
+
+.landing-card .card-body {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+
+/* =========================================
+   Decorative icon
+   ========================================= */
+
+.landing-icon {
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   Text
+   ========================================= */
+
+.landing-title {
+    margin-bottom: 16px;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 750;
+
+    letter-spacing: -1px;
+
+    color: #172554;
+}
+
+.landing-description {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   Button
+   ========================================= */
+
+.button-wrapper {
+    margin-top: 35px;
+}
+
+.load-button {
+    min-width: 190px;
+
+    padding: 13px 28px !important;
+
+    border: none !important;
+    border-radius: 12px !important;
+
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    ) !important;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.load-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(37, 99, 235, 0.35);
+}
+
+.load-button:active {
+    transform: translateY(0);
+}
+
+.button-arrow {
+    margin-left: 5px;
+
+    transition: margin-left 0.2s ease;
+}
+
+.load-button:hover .button-arrow {
+    margin-left: 10px;
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .app-navbar-subtitle {
+        display: none;
+    }
+
+    .landing-card .card-body {
+        padding: 45px 25px;
+    }
+
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .landing-description {
+        font-size: 0.95rem;
+    }
+}
